@@ -1,0 +1,36 @@
+---
+title: "R for DS chapter 5"
+output: html_notebook
+---
+```{r}
+library(nycflights13)
+
+library(tidyverse)
+```
+
+```{r}
+nycflights13::flights
+```
+
+
+```{r}
+jan1 <- filter(flights, month == 1, day == 1)
+
+```
+
+
+```{r}
+(dec25 <- filter(flights, month == 12, day == 25))
+
+```
+
+
+```{r}
+filter(flights, !(arr_delay > 120 | dep_delay > 120))
+filter(flights, arr_delay <= 120, dep_delay <= 120)
+```
+
+
+```{r}
+```
+
